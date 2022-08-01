@@ -1,0 +1,50 @@
+/* html{
+    background-color: #f2f4fc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}     
+
+.nav-list{
+    list-style: none;
+    
+}
+
+.nav-list li {
+    display: inline;
+    font-size: 1.5em;
+    word-spacing: 2.5em;
+    
+    
+}
+
+.circle-nav{
+    width: 6em;
+    height: 2em;
+}
+
+.list-link{
+    text-decoration: none;
+    color: #6B708D;
+}
+
+.list-link:hover{
+    color: #072ac8;
+}
+
+.contact-us-button{
+    color: white;
+    background-color: #072ac8;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
