@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <img class="circle-nav" src="circle.png" alt="circle logo" />
+            <ul class="nav-list">
+                <li><a class="list-link" href="#nav"> Home </a></li>
+                <li><a class="list-link" href="#"> Projects </a></li>
+                <li><a class="list-link" href="#"> Services </a></li>
+            </ul>
+            <a href="#" class="contact-us-button">Contact Us</a><!--Make it button-->
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div>
+            <form action="Submit">
+                <label for="Full Name">Full Name *</label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name">
+                <label for="Email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <label for="Phone">Phone</label>
+                <input type="tel" name="" id="" placeholder="Enter your Phone">
+                <label for="Message">Message *</label>
+                <textarea placeholder="Write your message here..." maxlength="5000" id="message" 
+                name="message" data-name="message" class="contact-text-field textarea w-input">
+                </textarea>
+
+                <input type="submit" value="Submit" data-wait="Please wait..." 
+                id="submit-boton" class="button primary-button contact w-button">
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <img class="circle-footer" src="circle.png" alt="circle logo" />
+
+        <p>2972 Westheimer Rd. Santa Ana, </br> 
+            Illinois 85486</p>
+
+        <a href="#" class="Services-link">Team</a>
+        <a href="#" class="Services-link">Services</a>
+        <a href="#" class="Services-link">About Us</a>
+        <a href="#" class="Services-link">Press</a>
+        <a href="#" class="Services-link">Projects</a>
+        <a href="#" class="Services-link">Privacy Policy</a>
+    </footer>
+</body>
+</html>
