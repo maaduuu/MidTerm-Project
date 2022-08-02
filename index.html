@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="dist\output.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -109,26 +110,42 @@
         </div>
 
     </section>
-
-    <section>
-        <h2>Do you have any questions?</h2>
-        <p>Let us help you!</p>
-        <input type="email" placeholder="Enter your email">
-        <button type="button">Suscribe</button>
+-->
+    <section class="bg-[#FFC600] mr-12 ml-12 flex items-center flex-col">
+        <h1 class="text-[#292E47] ">Do you have any questions?</h1>
+        <p class="text-[#6B708D]">Let us help you!</p>
+        <div class="flex justify-center">
+            <input type="email" placeholder="Enter your email">
+            <button type="button">Suscribe</button>
+        </div>
     </section>
 
-    <footer>
-        <img class="circle-footer" src="circle.png" alt="circle logo" />
+<footer class="flex justify-between mt-12 text-xl pr-8 pl-8 mt-20"  > <!--Why text personallizers doesn`t work?-->
+    <div>
+    <img class="circle-footer" src="img-index\circle.png" alt="circle logo" />
+    <p class="pt-7 text-[#6B708D] ">2972 Westheimer Rd. Santa Ana, </br> 
+        Illinois 85486</p>
+    </div>
 
-        <p>2972 Westheimer Rd. Santa Ana, </br> 
-            Illinois 85486</p>
-
-        <a href="#" class="Services-link">Team</a>
-        <a href="#" class="Services-link">Services</a>
-        <a href="#" class="Services-link">About Us</a>
-        <a href="#" class="Services-link">Press</a>
-        <a href="#" class="Services-link">Projects</a>
-        <a href="#" class="Services-link">Privacy Policy</a>
-    </footer> -->
+    <div class="grid gap-x-16 gap-y-3 grid-cols-2 grid-rows-3">
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Team</a>
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Services</a>
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Press</a>
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Projects</a>
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Privacy Policy</a>
+        <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">About Us</a>
+    </div>
+</footer> 
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+</script>
 </body>
 </html>
