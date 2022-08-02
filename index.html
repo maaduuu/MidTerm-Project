@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="dist\output.css" rel="stylesheet">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Agency</title>
-  </head>
+</head>
 
-  <body>
 
-    
+<body class="bg-[#f2f4fc]">
     <!-- NavBar -->
+
     <header>
-        <div class="max-w-6xl">
-            <nav class="flex flex-row justify-between items-center space-y-16" id="nav">
-        
-                <a href="#" class=" flex w-16"><img class="" src="img-index/circle.png" alt="circle logo" /></a>
-               
-                    <ul class="flex flex-row space-x-3 nav-list">
-                        <li><a class="list-link" href="#nav"> Home </a></li>
-                        <li><a class="list-link" href="#"> Projects </a></li>
-                        <li><a class="list-link" href="#"> Services </a></li>
-                      </ul>
-                      
-                <button class="bg-[#072AC8] hover:bg-[#444729] text-white py-4 px-6"><a href="#">Contact Us</a></button>
-              </nav>
+        <div class="mx-auto max-w-6xl font-medium text-lg">
+            <nav class="flex flex-row justify-between items-center space-y-16 font" id="nav">
+                <a href="#" class="pt-12 w-16"><img class="inline" src="img-index/circle.png" alt="circle logo" /></a>
+
+                <ul class="flex flex-row space-x-3 nav-list">
+                    <li><a class="list-link" href="#nav"> Home </a></li>
+                    <li><a class="list-link" href="#"> Projects </a></li>
+                    <li><a class="list-link" href="#"> Services </a></li>
+                </ul>
+
+                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8">
+                    <a href="#">Contact Us</a>
+                </button>
+            </nav>
         </div>
-      
     </header>
 
-    <!-- <section>
-        <h1>Empower Your Business With Stunning Design!</h1>
+    <section class="pt-24 px-8">
+        <!-- Container -->
+        <div class="flex justify-center content-centers mx-48 text-base" id="heroContainer">
+            <!-- Container Left -->
+            <div class="content-center justify-center leading-5">
+                <h1 class="text-6xl font-bold text-[#292E47] leading-[4.87rem] mt-5 mr-0 mb-8">
+                    Empower Your Business With Stunning Design!
+                </h1>
 
-        <p>Circle is a digital design and development studio. 
-            We design and develop astonishing websites and mobile apps.</p>
+                <div class="">
+                    <p class="text-[#6b708d] mt-0 mr-0 mb-10 text-[20px]">
+                        Circle is a digital design and development studio. We design and
+                        develop astonishing websites and mobile apps.
+                    </p>
+                </div>
 
-        <a href="#" class="see-our-work-button">See our work</a>
-        <a href="#" class="set-in-touch-button">Get in touch</a>        
+                <div class="buttons content-center justify-start leading-5">
+                    <a href="#" class="text-[17px] text-[#6b708d] font-medium ">See our work</a>
+                    <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8">
+                        <a href="#" class="set-in-touch-button">Get in touch</a>
+                    </button>
+                </div>
+            </div>
 
-        <img class="happy-guy" src="/img-index/Happy-guy.png" alt="happy guy" /> 
-
-        <div>
-            <img class="client-section" src="Client Section.png" alt="client section" />
+            <div class="inline-block">
+                <img src="/img-index/Happy-guy.png" alt="happy guy" />
+            </div>
         </div>
+        <img class="client-section" src="Client Section.png" alt="client section" />
     </section>
 
-    <section>
+    <!--  <section>
         <h2>Recent Projects</h2>
 
-        <div> <!--Inside this "div" I will make another 3 to facility the CSS-->
-    <!-- <div>
+        <div> Inside this "div" I will make another 3 to facility the CSS
+     <div>
                 <img class="rectangle-1" src="Rectangle 1.png" alt="rectangle 1" />
                 <h3>Simplify</h3>
                 <p>UI Desing & App Development</p>
@@ -119,7 +140,6 @@
 
     <footer>
         <img class="circle-footer" src="circle.png" alt="circle logo" />
-
         <p>2972 Westheimer Rd. Santa Ana, </br> 
             Illinois 85486</p>
 
@@ -130,5 +150,17 @@
         <a href="#" class="Services-link">Projects</a>
         <a href="#" class="Services-link">Privacy Policy</a>
     </footer> -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
 </body>
+
 </html>
