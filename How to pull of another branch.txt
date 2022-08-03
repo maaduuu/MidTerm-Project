@@ -1,0 +1,9 @@
+git branch  //Y comprobamos nuestras ramas EN LOCAL
+
+git fetch //Para actualizar los datos de github
+
+git branch -r //Veremos todas las ramas en el repositorio de GITHUB
+
+git checkout "nombre de la rama de destino" //Nos trasladamos a la rama
+
+git pull //Se nos habrá actualizado correctamente
