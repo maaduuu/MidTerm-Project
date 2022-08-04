@@ -3,6 +3,8 @@
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
@@ -11,29 +13,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="link" href="../../MidTerm-Project/index.html">
     <title>Circle Agency</title>
 </head>
 
 
 <body class="bg-[#f2f4fc] mx-[72px]
              md:mx-[4px]">
-    <header>
-        <div class="mx-auto max-w-6xl font-medium text-lg">
-            <nav class="flex flex-row justify-between items-center space-y-16 font" id="nav">
-                <a href="#" class="pt-12 w-16"><img class="inline" src="../img-index/circle.png" alt="circle logo" /></a>
-
-                <ul class="flex flex-row space-x-3 nav-list">
-                    <li><a class="list-link" href="#nav"> Home </a></li>
-                    <li><a class="list-link" href="#"> Projects </a></li>
-                    <li><a class="list-link" href="#"> Services </a></li>
-                </ul>
-
-                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8">
-                    <a href="html\contact.html">Contact Us</a>
-                </button>
-            </nav>
-        </div>
-    </header>
+             <header>
+                <div class="mx-auto max-w-6xl font-medium text-lg">
+                    <div class="flex flex-row justify-between items-center space-y-16 font">
+                        <a href="../index.html" class="pt-12 w-auto md:pl-12 md:w-full md:pb-12"><img class="inline" src="../img-index/circle.png" alt="circle logo" /></a>
+                        <span class="md:text-3xl md:cursor-pointer md:pb-12 hm:hidden "><ion-icon name="menu" onclick="Menu(this)"></ion-icon></span>
+                        <nav class="" id="nav">
+                            
+            
+                            <ul class="flex flex-row space-x-3 nav-list 
+                            md:z-auto md:static md:absolute md:flex md:flex-col md:left-0 md:bg-slate-300 md:w-full md:pl-7 md:space-x-0 md:opacity-0 top-[-400px] transition-all ease-in duration-500">
+                                <li class="md:my-2"><a class="list-link" href="#nav"> Home </a></li>
+                                <li class="md:my-2" ><a class="list-link" href="#"> Projects </a></li>
+                                <li class="md:my-2"><a class="list-link" href="#"> Services </a></li>
+                            </ul> 
+            
+                            
+            
+                        </nav>
+                        <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:hidden">
+                                <a href="html\contact.html">Contact Us</a>
+                            </button>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </header>
 
     <section class="mt-48 mx-12
                     md:mt-0">
@@ -123,6 +136,10 @@
                         'max': '639px'
                     },
                     // => @media (max-width: 639px) { ... }
+                    'hm': {
+                        'min': '767px'
+                    },
+                    // => @media (min-width: 767px) { ... }
                 },
 
                 extend: {
@@ -132,6 +149,12 @@
                 },
             },
         };
+
+        function Menu(e){
+            let list = document.querySelector('ul');
+            
+            e.name === 'menu' ? (e.name = "close", list.classList.add('md:top-[105px]'),list.classList.add('md:opacity-100')) : (e.name = "menu", list.classList.remove('md:top-[105px]'),list.classList.remove('md:opacity-100'))
+            };
     </script>
 </body>
 </html>
