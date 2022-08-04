@@ -107,24 +107,24 @@
         <div class=" mt-[200px] mx-0 px-[30px] leading-5">
             <div class="flex flex-col justify-between leading-5 mx-[179.6px]">
                 <h2 class="text-[40px] font-bold text-[#292e47] leading-[36px] mt-[20px] mb-[80px] ">Recent Projects</h2>
-
+                        <!-- gap-[16px_40px] => gap-[40px] -->
                 <div class="flex flex-row gap-[16px_40px] w-[95%]">
                     <!-- Inside this "div" I will make another 3 to facility the CSS -->
-                    <div class="bg-white flex flex-col justify-between h-[35rem] flex justify-around">
+                    <div class="bg-white flex flex-col justify-between w-[33%] h-[35rem] flex justify-around">
                         <img class="rectangle-1" src="img-index/Rectangle 1.png" alt="rectangle 1" />
                         <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">Simplify</h3>
                         <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">UI Desing & App Development</p>
                         <a class="text-[#072ac8] m-[30px] font-[500] text-[17px]" href="#">Learn More</a>
                     </div>
 
-                    <div class="bg-white flex flex-col justify-between flex justify-around">
+                    <div class="bg-white flex flex-col justify-between w-[33%] flex justify-around">
                         <img class="rectangle-2" src="img-index/Rectangle 2.png" alt="rectangle 2" />
                         <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">Dashcoin</h3>
                         <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">Web Development</p>
                         <a class="text-[#072ac8] m-[30px] font-[500] text-[17px]" href="#">Learn More</a>
                     </div>
 
-                    <div class="bg-white flex flex-col justify-between flex justify-around">
+                    <div class="bg-white flex flex-col justify-between w-[33%] flex justify-around">
                         <img class="rectangle-3" src="img-index/Rectangle 3.png" alt="rectangle 3" />
                         <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">Vectorify</h3>
                         <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">User experience Desing</p>
@@ -166,13 +166,17 @@
 
     </section>
 
-    <section class="mt-[40px] pr-[30px] pl-[30px]">
+    <section class="mt-[40px] pr-[30px] pl-[30px]
+                    md:ml-[30] md:mr-[30]">
 
-        <div class="flex flex-col justify-between leading-5 mx-[179.6px]">
+        <div class="flex flex-col justify-between leading-5 mx-[179.6px]
+                    md:items-center">
             <h1 class="text-[#292E47] leading-[44px] mb-[70px] mt-5 mx-5 text-[40px] font-bold">Our Services</h1>
               
-            <div class=" flex flex-row gap-[40px] w-[95%]"> 
-                <div class="bg-white flex flex-col w-[33%] h-[30rem] flex justify-around ">
+            <div class="flex flex-row gap-[40px] w-[95%]
+                        md:flex-col md:items-center"> 
+                <div class="bg-white flex flex-col w-[33%] h-[30rem] flex justify-around
+                            md:w-[100vw]  md:w-[90vw]">
                     <img class="h-24 w-24 mt-10 ml-10" src="img-index\Icon 1.png" alt="writing pen icon" />
                     <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">User Interface Desing</h3>
                     <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">Circle provides you with a stunning
@@ -180,7 +184,8 @@
                     <a href="#" class="text-[#072ac8] m-[30px] font-[500] text-[17px]">Learn More</a>
                 </div>
 
-                <div class="bg-white flex flex-col w-[33%] flex justify-around ">
+                <div class="bg-white flex flex-col w-[33%] flex justify-around 
+                            md:w-[100vw] md:w-[90vw]">
                     <img class="h-24 w-24 mt-10 ml-10" src="img-index\Icon 2.png" alt="cursor icon" />
                     <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">User Experience Desing</h3>
                     <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">Circle always focuses on delivering
@@ -188,7 +193,8 @@
                     <a href="#" class="text-[#072ac8] m-[30px] font-[500] text-[17px]">Learn More</a>
                 </div>
 
-                <div class="bg-white flex flex-col w-[33%] flex justify-around">
+                <div class="bg-white flex flex-col w-[33%] flex justify-around
+                            md:w-[100vw] md:w-[90vw]">
                     <img class="h-24 w-24 mt-10 ml-10" src="img-index\Icon 3.png" alt="file icon" />
                     <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">Application Development</h3>
                     <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">We develop high-quality mobile and web
@@ -200,44 +206,81 @@
 
     </section>
 
-      <section class="bg-[#FFC600] mt-[60px] pt-16 mr-12 ml-12 flex items-center flex-col">
+      <section class="bg-[#FFC600] mt-[60px] pt-16 mr-12 ml-12 flex items-center flex-col
+                      ml-[0px] mr-[0px]">
         <div class="h-[500px] flex justify-center items-center flex-col my-5">
-            <h1 class="text-[#292E47] leading-[44px] my-5 mx-5 text-[40px] font-bold">Do you have any questions?</h1>
-            <p class="text-[#6B708D] text-[20px] my-5">Let us help you!</p>
-            <div class="flex justify-center my-5">
+            <h1 class="text-[#292E47] leading-[44px] my-5 mx-5 text-[40px] font-bold
+                       md:text-[30px] ">
+                       Do you have any questions?</h1>
+            <p class="text-[#6B708D] text-[20px] my-5
+                      md:text-[17px]  ">
+                      Let us help you!</p>
+            <div class="flex justify-center my-5
+                        md:flex-col md:gap-y-3 md:w-full">
                 <div class="relative">
                     <span class="absolute flex items-center left-0 inset-y-0 pl-2"> 
                         <svg class="h-6 w-6 text-[#6B808D]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>   
                     </span>
-                    <input type="email" class="py-4 pl-10 " placeholder="Enter yout email">
+                    <input type="email" class="py-4 pl-10
+                                               md:w-full " placeholder="Enter yout email">
                 </div>
                 <button type="button" class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8">Suscribe</button>
             </div>
         </div>
     </section>
 
-<footer class="flex justify-between mt-12 text-xl pr-8 pl-8 mt-20 pb-24"  > 
-    <div class="ml-10">
-        <img class="circle-footer" src="img-index\circle.png" alt="circle logo" />
-        <p class="pt-7 text-[#6B708D] ">2972 Westheimer Rd. Santa Ana, </br> 
-            Illinois 85486</p>
+    <footer class="flex justify-between mt-12 text-xl pr-8 pl-8 mt-20 pb-24
+                    md:flex-col md:justify-center md:items-center md:text-sm"  > 
+        <div class="ml-10 
+                    md:ml-0 md:items-center md:text-center md:mb-6">
+            <img class="md:mx-auto" src="img-index\circle.png" alt="circle logo" />
+            <p class="pt-7 text-[#6B708D]">2972 Westheimer Rd. Santa Ana, </br> 
+                Illinois 85486</p>
         </div>
 
-        <div class="grid gap-x-16 gap-y-3 grid-cols-2 grid-rows-3">
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Team</a>
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Services</a>
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Press</a>
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Projects</a>
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Privacy Policy</a>
-            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">About Us</a>
+        <div class="grid gap-x-16 gap-y-3 grid-cols-2 grid-rows-3
+                    md:grid-cols-3 md:grid-rows-2 md:text-center">
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Team</a>
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Services</a>
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Press</a>
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Projects</a>
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Privacy Policy</a>
+                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">About Us</a>
         </div>
     </footer>
 
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    '2xl': {
+                        'max': '1535px'
+                    },
+                    // => @media (max-width: 1535px) { ... }
+
+                    'xl': {
+                        'max': '1279px'
+                    },
+                    // => @media (max-width: 1279px) { ... }
+
+                    'lg': {
+                        'max': '1023px'
+                    },
+                    // => @media (max-width: 1023px) { ... }
+
+                    'md': {
+                        'max': '767px'
+                    },
+                    // => @media (max-width: 767px) { ... }
+
+                    'sm': {
+                        'max': '639px'
+                    },
+                    // => @media (max-width: 639px) { ... }
+                },
+
                 extend: {
                     colors: {
                         clifford: "#da373d",
@@ -246,13 +289,10 @@
             },
         };
     </script>
+
+
+
 </body>
 
 </html> 
-
-
-
-
-
-
 
