@@ -29,9 +29,13 @@
                     <li><a class="list-link" href="#"> Services </a></li>
                 </ul>
 
-                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8">
+                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:invisible">
                     <a href="html\contact.html">Contact Us</a>
                 </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
             </nav>
         </div>
     </header>
@@ -62,7 +66,7 @@
             </div>
 
             <div class="">
-                <img class="inline-block text-[14px]" src="img-index/Happy-guy.png" alt="happy guy" />
+                <img class="inline-block text-[14px] w-[100%]" src="img-index/Happy-guy.png" alt="happy guy" />
             </div>
         </div>
 
@@ -139,7 +143,7 @@
 
     <section>
         <div
-            class="relative bg-[#292e47] bg-[url('https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800d0da83d2876b6ccdba_Orbit.png')] bg-[0px_0px] bg-contain text-base my-[200px] mx-[99.6px] px-[30px] h-[622px]">
+            class="relative bg-[#292e47] bg-[url('https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800d0da83d2876b6ccdba_Orbit.png')] bg-[0px_0px] bg-contain text-base my-[200px] mx-[99.6px] px-[30px] h-[622px] bg-no-repeat bg-center">
             <div class="flex items-center flex-col justify-around h-[100%]">
                 <h3 class="text-[#ecf7ff] font-bold text-[40px] leading-[30px] my-[20px] mb-[10px] text-center">Hear
                     What Our Clients Have to Say</h2>
@@ -238,6 +242,33 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    '2xl': {
+                        'max': '1535px'
+                    },
+                    // => @media (max-width: 1535px) { ... }
+
+                    'xl': {
+                        'max': '1279px'
+                    },
+                    // => @media (max-width: 1279px) { ... }
+
+                    'lg': {
+                        'max': '1023px'
+                    },
+                    // => @media (max-width: 1023px) { ... }
+
+                    'md': {
+                        'max': '767px'
+                    },
+                    // => @media (max-width: 767px) { ... }
+
+                    'sm': {
+                        'max': '639px'
+                    },
+                    // => @media (max-width: 639px) { ... }
+                },
+
                 extend: {
                     colors: {
                         clifford: "#da373d",
