@@ -23,7 +23,7 @@
     <header>
         <div class="mx-auto max-w-6xl font-medium text-lg">
             <div class="flex flex-row justify-between items-center space-y-16 font">
-                <a href="#" class="pt-12 w-auto md:pl-12 md:w-full md:pb-12"><img class="inline" src="../img-index/circle.png" alt="circle logo" /></a>
+                <a href="#" class="pt-12 w-auto md:pl-12 md:w-[90vw] md:pb-12"><img class="inline md:w-[15vw]" src="../img-index/circle.png" alt="circle logo" /></a>
                 <span class="md:text-3xl md:cursor-pointer md:pb-12 hm:hidden "><ion-icon name="menu" onclick="Menu(this)"></ion-icon></span>
                 <nav class="" id="nav">
                     
@@ -48,12 +48,14 @@
         </div>
     </header>
 
-    <section class="pt-24 px-8">
+    <section class="pt-[2rem] px-8">
         <!-- Container -->
-        <div class="flex justify-center content-centers mx-48 text-base">
+        <div class="flex justify-center content-centers mx-48 text-base
+                    md:content-center md:flex md:flex-col md:w-[90vw] md:mx-[-0.5rem]">
             <!-- Container Left -->
-            <div class="content-center justify-center leading-5 mb-[179px]">
-                <h1 class="text-6xl font-bold text-[#292E47] leading-[4.87rem] mt-5 mr-0 mb-8">
+            <div class="content-center justify-center leading-5 mb-[179px] md:text-center md:items-center md:mb-[5rem]">
+                <h1 class="text-6xl font-bold text-[#292E47] leading-[4.87rem] mt-5 mr-0 mb-8 md:mb-[1rem] 
+                md:text-3xl md:m-0 md:leading-2">
                     Empower Your Business With Stunning Design!
                 </h1>
 
@@ -73,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="md:w-full md:flex-col">
                 <img class="inline-block text-[14px] w-[100%]" src="img-index/Happy-guy.png" alt="happy guy" />
             </div>
         </div>
@@ -82,9 +84,30 @@
 
     <section class="flex justify-center row-direction py-0 px-[30px]">
         <div
-            class="flex flex-row justify-around gap-[16px] w-[95%] text-base">
+            class="flex flex-row justify-around gap-[16px] w-[95%] text-base
+            md:flex-col md:gap-x-[1rem]">
 
-            <a href="https://www.airbnb.es/"><img class="flex content-center justify-center"
+            <a href="https://www.airbnb.es/"><img class="flex content-center justify-center md:hidden"
+                src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b780a3b137cb739a90_Airbnb%20Logo.svg"
+                alt="airbnb">
+        </a>
+
+        <a href="https://www.google.com/"> <img class="flex content-center justify-center md:hidden"
+                src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b79add40db8a6896bf_Google%20Logo.svg"
+                alt="google"></a>
+
+                <a href="https://www.microsoft.com/">
+                    <img class="flex content-center justify-center md:hidden"
+                        src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b752675aadf1d03a03_Microsoft%20Logo.svg"
+                        alt="microsoft"></a>
+    
+                <a href="https://www.fedex.com/"> <img class="flex content-center justify-center md:hidden"
+                        src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7ac3e6078471cd3c3_FedEx%20Logo.svg"
+                        alt="fedex"></a>
+
+<div class="md:flex md:flex-row md:justify-center md:gap-[3rem] md:w-[95%] md:h-20 hidden">
+
+    <a href="https://www.airbnb.es/"><img class="flex content-center justify-center"
                     src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b780a3b137cb739a90_Airbnb%20Logo.svg"
                     alt="airbnb">
             </a>
@@ -92,17 +115,21 @@
             <a href="https://www.google.com/"> <img class="flex content-center justify-center"
                     src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b79add40db8a6896bf_Google%20Logo.svg"
                     alt="google"></a>
-
-            <a href="https://www.microsoft.com/">
+</div>
+            
+<div class="md:flex md:flex-row md:justify-center md:gap-[3rem] md:w-[95%] hidden">
+       <a href="https://www.microsoft.com/">
                 <img class="flex content-center justify-center"
                     src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b752675aadf1d03a03_Microsoft%20Logo.svg"
                     alt="microsoft"></a>
 
-            <a href="https://www.fedex.com/"> <img class="flex content-center justify-center"
+            <a href="https://www.fedex.com/"> <img class="flex content-center justify-center md:"
                     src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7ac3e6078471cd3c3_FedEx%20Logo.svg"
                     alt="fedex"></a>
+</div>
+         
 
-            <a href="https://www.amazon.es/"> <img class="flex content-center justify-center"
+            <a href="https://www.amazon.es/"> <img class="flex content-center justify-center md:hidden"
                     src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7425046dbed56ff16_Amazon%20Logo.svg"
                     alt="amazon">
             </a>
@@ -116,7 +143,8 @@
 
 
     <section>
-        <div class=" mt-[200px] mx-0 px-[30px] leading-5">
+        <div class=" mt-[200px] mx-0 px-[30px] leading-5
+        md:px-0">
             <div class="flex flex-col justify-between leading-5 mx-[179.6px]
                         md:items-center">
                 <h2 class="text-[40px] font-bold text-[#292e47] leading-[36px] mt-[20px] mb-[80px] md:text-center ">Recent Projects</h2>
@@ -129,7 +157,7 @@
                         <img class="rectangle-1" src="img-index/Rectangle 1.png" alt="rectangle 1" />
                         <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">Simplify</h3>
                         <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">UI Desing & App Development</p>
-                        <a class="text-[#072ac8] m-[30px] font-[500] text-[17px]" href="#">Learn More</a>
+                        <a class="text-[#072ac8] m-[30px] font-[500] text-[17px]" href="/html/simplify.html">Learn More</a>
                     </div>
 
                     <div class="bg-white flex flex-col justify-between w-[33%] flex justify-around
@@ -186,7 +214,7 @@
     </section>
 
     <section class="mt-[40px] pr-[30px] pl-[30px]
-                    md:ml-[30] md:mr-[30]" id="Projects">
+                    md:ml-[30] md:mr-[30] md:px-0" id="Projects">
 
         <div class="flex flex-col justify-between leading-5 mx-[179.6px]
                     md:items-center">
@@ -226,10 +254,10 @@
     </section>
 
     <section class="bg-[#FFC600] mt-[60px] pt-16 mr-12 ml-12 flex items-center flex-col
-                      ml-[0px] mr-[0px]">
+    md:ml-[0px] md:mr-[0px] pr-[30px] pl-[30px]">
         <div class="h-[500px] flex justify-center items-center flex-col my-5">
             <h1 class="text-[#292E47] leading-[44px] my-5 mx-5 text-[40px] font-bold
-                       md:text-[30px] ">
+                       md:text-[30px] md:text-center">
                        Do you have any questions?</h1>
             <p class="text-[#6B708D] text-[20px] my-5
                       md:text-[17px]  ">
