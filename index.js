@@ -13,7 +13,7 @@ function getJsonOnline(){
             <div class="bg-white flex flex-col justify-between w-[33%] flex justify-around
                         md:w-[100vw]  md:w-[90vw]">
                         <link rel="link" href="../simplify.html">
-                <img class="rectangle-1" src="img-index/Rectangle 1.png" alt="rectangle 1" />
+                <img class="rectangle-1 w-full" src="img-index/Rectangle 1.png" alt="rectangle 1" />
                 <h3 class="font-[500] text-[24px] my-[30px] mx-[30px] mb-[20px]">${res[i].title}</h3>
                 <p class="my-[0px] mx-[30px] mb-[10px] text-[17px] leading-5">${res[i].title}</p>
                 <a class="text-[#072ac8] m-[30px] font-[500] text-[17px]" href="/html/simplify.html">Learn More</a>
