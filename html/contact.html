@@ -20,33 +20,37 @@
 
 <body class="bg-[#f2f4fc] mx-[72px]
              md:mx-[4px]">
-             <header>
-                <div class="mx-auto max-w-6xl font-medium text-lg">
-                    <div class="flex flex-row justify-between items-center space-y-16 font">
-                        <a href="../index.html" class="pt-12 w-auto md:pl-12 md:w-full md:pb-12"><img class="inline" src="../img-index/circle.png" alt="circle logo" /></a>
-                        <span class="md:text-3xl md:cursor-pointer md:pb-12 hm:hidden "><ion-icon name="menu" onclick="Menu(this)"></ion-icon></span>
-                        <nav class="" id="nav">
-                            
-            
-                            <ul class="flex flex-row space-x-3 nav-list 
+    <header>
+        <div class="mx-auto max-w-6xl font-medium text-lg">
+            <div class="flex flex-row justify-between items-center space-y-16 font">
+                <a href="../index.html" class="pt-12 w-auto md:pl-12 md:w-full md:pb-12"><img class="inline"
+                        src="../img-index/circle.png" alt="circle logo" /></a>
+                <span class="md:text-3xl md:cursor-pointer md:pb-12 hm:hidden ">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+                <nav class="" id="nav">
+
+
+                    <ul
+                        class="flex flex-row space-x-3 nav-list 
                             md:z-auto md:static md:absolute md:flex md:flex-col md:left-0 md:bg-slate-300 md:w-full md:pl-7 md:space-x-0 md:opacity-0 top-[-400px] transition-all ease-in duration-500">
-                                <li class="md:my-2"><a class="list-link" href="#nav"> Home </a></li>
-                                <li class="md:my-2" ><a class="list-link" href="#"> Projects </a></li>
-                                <li class="md:my-2"><a class="list-link" href="#"> Services </a></li>
-                            </ul> 
-            
-                            
-            
-                        </nav>
-                        <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:hidden">
-                                <a href="html\contact.html">Contact Us</a>
-                            </button>
-                    </div>
-                   
-                    
-                    
-                </div>
-            </header>
+                        <li class="md:my-2"><a class="list-link" href="#nav"> Home </a></li>
+                        <li class="md:my-2"><a class="list-link" href="#"> Projects </a></li>
+                        <li class="md:my-2"><a class="list-link" href="#"> Services </a></li>
+                    </ul>
+
+
+
+                </nav>
+                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:hidden">
+                    <a href="html\contact.html">Contact Us</a>
+                </button>
+            </div>
+
+
+
+        </div>
+    </header>
 
     <section class="mt-48 mx-12
                     md:mt-0">
@@ -56,30 +60,33 @@
             <form action="Submit" class="flex flex-col gap-y-3">
                 <label class="text-3xl text-[#6B708D]
                               md:text-[20px]" for="Full Name">Full Name *</label>
-                <input type="text" name="name" id="name" placeholder="Enter your full name" class="bg-[#6B708D1A] h-16 pl-3.5">
+                <input type="text" name="name" id="name" placeholder="Enter your full name"
+                    class="bg-[#6B708D1A] h-16 pl-3.5" required>
                 <div class="flex flex-row gap-y-3 gap-x-3
                             md:flex-col">
                     <div class="flex flex-col w-[49%]
                                 md:w-auto">
                         <label class="text-3xl text-[#6B708D]
                                       md:text-[20px]" for="Email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" class="bg-[#6B708D1A] h-16 pl-3.5">
+                        <input type="email" name="email" id="email" placeholder="Enter your email"
+                            class="bg-[#6B708D1A] h-16 pl-3.5" >
                     </div>
                     <div class="flex flex-col w-[50%]
                                 md:w-auto">
                         <label class="text-3xl text-[#6B708D]
                                       md:text-[20px]" for="Phone">Phone</label>
-                        <input type="tel" name="" id="" placeholder="Enter your Phone" class="bg-[#6B708D1A] h-16  pl-3.5">
+                        <input type="tel" name="" id="phone" placeholder="Enter your Phone"
+                            class="bg-[#6B708D1A] h-16  pl-3.5" >
                     </div>
                 </div>
                 <label class="text-3xl text-[#6B708D]
                               md:text-[20px]" for="Message">Message *</label>
-                <textarea placeholder="Write your message here..." maxlength="5000" id="message" 
-                name="message" data-name="message" class="bg-[#6B708D1A] h-64">
+                <textarea placeholder="Write your message here..." maxlength="5000" id="message" name="message"
+                    data-name="message" class="bg-[#6B708D1A] h-64" required>
                 </textarea>
 
-                <input type="submit" value="Submit" data-wait="Please wait..." 
-                id="submit-boton" class="bg-[#072AC8] hover:bg-[#292E47] text-white h-20 py-4 px-8">
+                <input type="submit" value="Submit" id="addPost"
+                    class="bg-[#072AC8] hover:bg-[#292E47] text-white h-20 py-4 px-8 w-full">
 
             </form>
 
@@ -87,28 +94,29 @@
     </section>
 
     <footer class="flex justify-between mt-12 text-xl pr-8 pl-8 mt-20 pb-24
-                    md:flex-col md:justify-center md:items-center md:text-sm"  > 
+                    md:flex-col md:justify-center md:items-center md:text-sm">
         <div class="ml-10 
                     md:ml-0 md:items-center md:text-center md:mb-6">
             <img class="md:mx-auto" src="../img-index/circle.png" alt="circle logo" />
-            <p class="pt-7 text-[#6B708D]">2972 Westheimer Rd. Santa Ana, </br> 
+            <p class="pt-7 text-[#6B708D]">2972 Westheimer Rd. Santa Ana, </br>
                 Illinois 85486</p>
         </div>
 
-        <div class="grid gap-x-16 gap-y-3 grid-cols-2 grid-rows-3
+        <div class="grid gap-x-16 gap-y-3 grid-cols-2 grid-rows-3 
                     md:grid-cols-3 md:grid-rows-2 md:text-center">
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Team</a>
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Services</a>
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Press</a>
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Projects</a>
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Privacy Policy</a>
-                <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">About Us</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Team</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Services</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Press</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Projects</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">Privacy Policy</a>
+            <a href="#" class="text-[#6B708D] hover:text-[#072AC8]">About Us</a>
         </div>
     </footer>
 
 
 
     <script>
+    
         tailwind.config = {
             theme: {
                 screens: {
@@ -150,14 +158,48 @@
             },
         };
 
-        function Menu(e){
+        function Menu(e) {
             let list = document.querySelector('ul');
-            
-            e.name === 'menu' ? (e.name = "close", list.classList.add('md:top-[105px]'),list.classList.add('md:opacity-100')) : (e.name = "menu", list.classList.remove('md:top-[105px]'),list.classList.remove('md:opacity-100'))
-            };
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('md:top-[105px]'), list.classList.add(
+                'md:opacity-100')) : (e.name = "menu", list.classList.remove('md:top-[105px]'), list.classList
+                .remove('md:opacity-100'))
+        };
+
+        document.getElementById("addPost").addEventListener("click", addPost);
+        function addPost(preventForm){
+            preventForm.preventDefault();
+            let fullName = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let message = document.getElementById("message").value;
+
+            fetch("https://jsonplaceholder.typicode.com/posts",{
+                method: "POST",
+                headers: {
+                    Accept: "text/plain, application/json, */*", "Content-type":"apliccation/json"
+                },
+                body: JSON.stringify({userId: fullName , id: email , title: phone , body: message}),
+            })
+            .then((response) => response.json(window.alert("Nice Form done!")))  
+            .catch((error) => window.alert("Fetch is not the correct!"))
+            .then((dataForm) => console.log(dataForm));
+        };
     </script>
 </body>
+
 </html>
 
 
 
+
+<!-- .catch((error) => {
+                if (preventForm === '')
+                return window.alert("Form is empty!");
+            })
+        
+        
+        
+    .catch(function(err) {
+        alert("Something went wrong. " + err);
+    -->
