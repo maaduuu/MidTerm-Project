@@ -3,6 +3,8 @@
 
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
@@ -20,24 +22,29 @@
 
     <header>
         <div class="mx-auto max-w-6xl font-medium text-lg">
-            <nav class="flex flex-row justify-between items-center space-y-16 font" id="nav">
-                <a href="#" class="pt-12 w-16"><img class="inline" src="img-index/circle.png" alt="circle logo" /></a>
-
-                <ul class="flex flex-row space-x-3 nav-list md:z-auto md:static md:absolute
-                md:flex md:flex-col md:left-0 md:bg-[#F2F4FC] md:space-x-0 ">
-                    <li class="md:my-2"><a class="list-link" href="#nav"> Home </a></li>
-                    <li class="md:my-2"><a class="list-link" href="#"> Projects </a></li>
-                    <li class="md:my-2"><a class="list-link" href="#"> Services </a></li>
-                </ul>
-
-                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:invisible">
-                    <a href="html\contact.html">Contact Us</a>
-                </button>
-
-            </nav>
+            <div class="flex flex-row justify-between items-center space-y-16 font">
+                <a href="#" class="pt-12 w-auto md:pl-12 md:w-full md:pb-12"><img class="inline" src="../img-index/circle.png" alt="circle logo" /></a>
+                <span class="md:text-3xl md:cursor-pointer md:pb-12 hm:hidden "><ion-icon name="menu" onclick="Menu(this)"></ion-icon></span>
+                <nav class="" id="nav">
+                    
+    
+                    <ul class="flex flex-row space-x-3 nav-list 
+                    md:z-auto md:static md:absolute md:flex md:flex-col md:left-0 md:bg-slate-300 md:w-full md:pl-7 md:space-x-0 md:opacity-0 top-[-400px] transition-all ease-in duration-500">
+                        <li class="md:my-2"><a class="list-link" href="#nav"> Home </a></li>
+                        <li class="md:my-2" ><a class="list-link" href="#"> Projects </a></li>
+                        <li class="md:my-2"><a class="list-link" href="#"> Services </a></li>
+                    </ul> 
+    
+                    
+    
+                </nav>
+                <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:hidden">
+                        <a href="html\contact.html">Contact Us</a>
+                    </button>
+            </div>
+           
             
-                
-            </svg>
+            
         </div>
     </header>
 
@@ -152,7 +159,7 @@
             class="relative bg-[#292e47] bg-[url('https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800d0da83d2876b6ccdba_Orbit.png')] bg-[0px_0px] bg-contain text-base my-[200px] mx-[99.6px] px-[30px] h-[622px] bg-no-repeat bg-center
             md:mx-auto ">
             <div class="flex items-center flex-col justify-around h-[100%]">
-                <h3 class="text-[#ecf7ff] font-bold text-[40px] leading-[30px] my-[20px] mb-[10px] text-center">Hear
+                <h3 class="text-[#ecf7ff] font-bold text-[40px] leading-[30px] my-[20px] mb-[10px] text-center md:leading-[50px]">Hear
                     What Our Clients Have to Say</h2>
                     <div>
                         <p class="text-[#ffc600] text-[24px] font-medium leading-[38.4px] my-0 mx-auto text-center">
@@ -179,7 +186,7 @@
     </section>
 
     <section class="mt-[40px] pr-[30px] pl-[30px]
-                    md:ml-[30] md:mr-[30]">
+                    md:ml-[30] md:mr-[30]" id="Projects">
 
         <div class="flex flex-col justify-between leading-5 mx-[179.6px]
                     md:items-center">
@@ -291,6 +298,11 @@
                         'max': '639px'
                     },
                     // => @media (max-width: 639px) { ... }
+
+                    'hm': {
+                        'min': '767px'
+                    },
+                    // => @media (min-width: 767px) { ... }
                 },
 
                 extend: {
@@ -299,7 +311,16 @@
                     },
                 },
             },
+
+            
         };
+        
+        function Menu(e){
+            let list = document.querySelector('ul');
+            
+            e.name === 'menu' ? (e.name = "close", list.classList.add('md:top-[105px]'),list.classList.add('md:opacity-100')) : (e.name = "menu", list.classList.remove('md:top-[105px]'),list.classList.remove('md:opacity-100'))
+            };
+            
     </script>
 
 
