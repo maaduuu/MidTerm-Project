@@ -43,7 +43,7 @@
 
                 </nav>
                 <button class="bg-[#072AC8] hover:bg-[#292E47] text-white py-4 px-8 md:hidden">
-                    <a href="html\contact.html">Contact Us</a>
+                    <a href="#">Contact Us</a>
                 </button>
             </div>
 
@@ -62,8 +62,7 @@
                               md:text-[20px]" for="Full Name">Full Name *</label>
                 <input type="text" name="name" id="name" placeholder="Enter your full name"
                     class="bg-[#6B708D1A] h-16 pl-3.5" required>
-                <div class="flex flex-row gap-y-3 gap-x-3
-                            md:flex-col">
+                <div class="flex flex-row gap-y-3 gap-x-3 md:flex-col">
                     <div class="flex flex-col w-[49%]
                                 md:w-auto">
                         <label class="text-3xl text-[#6B708D]
@@ -167,6 +166,7 @@
         };
 
         document.getElementById("addPost").addEventListener("click", addPost);
+        
         function addPost(preventForm){
             preventForm.preventDefault();
             let fullName = document.getElementById("name").value;
@@ -181,8 +181,7 @@
                 },
                 body: JSON.stringify({userId: fullName , id: email , title: phone , body: message}),
             })
-            .then((response) => response.json(window.alert("Nice Form done!")))  
-            .catch((error) => window.alert("Fetch is not the correct!"))
+            .then((response) => response.json(window.alert("Nice Form done!")))
             .then((dataForm) => console.log(dataForm));
         };
     </script>
